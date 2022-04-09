@@ -35,6 +35,7 @@ if v.Name == "Nightvision"  then
     lead.Parent = v
     lead.Attachment1 = v.Hitbox.Attachment
     lead.Attachment0 = game.Players.LocalPlayer.Character.HumanoidRootPart.Attachment
+    game.StarterGui:SetCore("SendNotification", {Title = "Rare Item Detected";Text = "Nightvision";Duration = 15;})
     wait(5)
 sss:Destroy()
         end
@@ -75,6 +76,7 @@ if v:FindFirstChild("Torso")  then
     lead.Parent = v
     lead.Attachment1 = v.Torso.Attachment
     lead.Attachment0 = game.Players.LocalPlayer.Character.HumanoidRootPart.Attachment
+    game.StarterGui:SetCore("SendNotification", {Title = "Rare Variants Detected";Text = "Golden";Duration = 15;})
     wait(5)
     sss:Destroy()
     end end
@@ -98,14 +100,14 @@ if v:FindFirstChild("Torso")  then
     local sss = Instance.new("Sound")
     sss.Name = 'DiamondSound'
     sss.Parent = game.Workspace
-    sss.SoundId = 'rbxassetid://138222365'
+    sss.SoundId = 'rbxassetid://5980545583'
     sss.Looped = true
     sss.Playing = true
     sss.Volume = 2
     bt.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
     local lead = Instance.new("Beam")
     lead.Transparency = NumberSequence.new (0, 0)
-    lead.Texture = 'rbxassetid://5980545583'
+    lead.Texture = 'rbxassetid://6545531971'
     lead.FaceCamera = true
     lead.LightEmission = 1
     lead.TextureSpeed = 3
@@ -115,6 +117,7 @@ if v:FindFirstChild("Torso")  then
     lead.Parent = v
     lead.Attachment1 = v.Torso.Attachment
     lead.Attachment0 = game.Players.LocalPlayer.Character.HumanoidRootPart.Attachment
+game.StarterGui:SetCore("SendNotification", {Title = "Rare Variants Detected";Text = "Diamond";Duration = 15;})
     wait(5)
     sss:Destroy()
     end end
